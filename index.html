@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="registrationForm">
+      <label>
+        <input type="radio" name="userType" value="admin" checked /> Admin
+      </label>
+      <label> <input type="radio" name="userType" value="user" /> User </label>
+      <label>
+        <input type="radio" name="userType" value="client" /> Client
+      </label>
+
+      <div id="adminForm" class="userForm">
+        <label>
+          Admin Username:
+          <input type="text" name="adminUsername" required />
+        </label>
+        <label>
+          Admin Password:
+          <input type="password" name="adminPassword" required />
+        </label>
+      </div>
+
+      <div id="userForm" class="userForm" style="display: none">
+        <label>
+          User Username:
+          <input type="text" name="userUsername" required />
+        </label>
+
+        <label>
+          User Password:
+          <input type="password" name="userPassword" required />
+        </label>
+      </div>
+
+      <div id="clientForm" class="userForm" style="display: none">
+        <label>
+          Client Username:
+          <input type="text" name="clientUsername" required />
+        </label>
+        <label>
+          Client Password:
+          <input type="password" name="clientPassword" required />
+        </label>
+      </div>
+
+      <input type="submit" value="Register" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
