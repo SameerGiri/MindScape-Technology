@@ -1,4 +1,4 @@
-# MindScape-Technology
+# MindScape
 <h1> Registration Form :</h1>
  This html forms represents a user registration form with three type user types 
  i.e Admin,User,and Client 
